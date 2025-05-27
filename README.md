@@ -1,3 +1,69 @@
+✅ Langkah 1: Clone Repository dari GitHub
+Misalnya URL repo: https://github.com/username/project-laravel.git
+
+bash
+Copy
+Edit
+git clone https://github.com/username/project-laravel.git
+cd project-laravel
+✅ Langkah 2: Install Dependency PHP dengan Composer
+Pastikan kamu sudah menginstall Composer:
+
+bash
+Copy
+Edit
+composer install
+✅ Langkah 3: Salin File .env
+Biasanya .env tidak ikut terupload ke GitHub (karena .gitignore), tapi akan ada .env.example. Salin dan ubah namanya:
+
+bash
+Copy
+Edit
+cp .env.example .env
+Kemudian edit file .env dan sesuaikan koneksi database, misalnya:
+
+dotenv
+Copy
+Edit
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+✅ Langkah 4: Generate App Key
+bash
+Copy
+Edit
+php artisan key:generate
+✅ Langkah 5: Buat dan Jalankan Migrasi (jika perlu)
+Jika project-nya menggunakan database, jalankan:
+
+bash
+Copy
+Edit
+php artisan migrate
+✅ Langkah 6: Jalankan Server Lokal Laravel
+bash
+Copy
+Edit
+php artisan serve
+Lalu buka di browser:
+
+cpp
+Copy
+Edit
+http://127.0.0.1:8000
+✅ Langkah 7 (Opsional): Install Frontend Dependency
+Jika proyek menggunakan frontend seperti Vite, jalankan juga:
+
+bash
+Copy
+Edit
+npm install
+npm run dev
+Pastikan kamu punya Node.js dan npm dulu. Download dari https://nodejs.org
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

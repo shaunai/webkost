@@ -1,68 +1,103 @@
-✅ Langkah 1: Clone Repository dari GitHub
-Misalnya URL repo: https://github.com/username/project-laravel.git
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Langkah Setup Laravel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+    .step {
+      background-color: #fff;
+      border-left: 5px solid #38bdf8;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .step h2 {
+      margin-top: 0;
+      color: #0ea5e9;
+    }
+    pre {
+      background-color: #1e293b;
+      color: #e2e8f0;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    .note {
+      background-color: #fef9c3;
+      padding: 10px;
+      border-left: 4px solid #facc15;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
 
-bash
-Copy
-Edit
-git clone https://github.com/username/project-laravel.git
-cd project-laravel
-✅ Langkah 2: Install Dependency PHP dengan Composer
-Pastikan kamu sudah menginstall Composer:
+  <div class="step">
+    <h2>✅ Langkah 1: Clone Repository dari GitHub</h2>
+    <p>Misalnya URL repo: <code>https://github.com/username/project-laravel.git</code></p>
+    <pre><code>git clone https://github.com/username/project-laravel.git
+cd project-laravel</code></pre>
+  </div>
 
-bash
-Copy
-Edit
-composer install
-✅ Langkah 3: Salin File .env
-Biasanya .env tidak ikut terupload ke GitHub (karena .gitignore), tapi akan ada .env.example. Salin dan ubah namanya:
+  <div class="step">
+    <h2>✅ Langkah 2: Install Dependency PHP dengan Composer</h2>
+    <p>Pastikan kamu sudah menginstall Composer:</p>
+    <pre><code>composer install</code></pre>
+  </div>
 
-bash
-Copy
-Edit
-cp .env.example .env
-Kemudian edit file .env dan sesuaikan koneksi database, misalnya:
-
-dotenv
-Copy
-Edit
-DB_CONNECTION=mysql
+  <div class="step">
+    <h2>✅ Langkah 3: Salin File .env</h2>
+    <p>Salin dan ubah nama file <code>.env.example</code>:</p>
+    <pre><code>cp .env.example .env</code></pre>
+    <p>Lalu edit koneksi database:</p>
+    <pre><code>DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=nama_database
 DB_USERNAME=root
-DB_PASSWORD=
-✅ Langkah 4: Generate App Key
-bash
-Copy
-Edit
-php artisan key:generate
-✅ Langkah 5: Buat dan Jalankan Migrasi (jika perlu)
-Jika project-nya menggunakan database, jalankan:
+DB_PASSWORD=</code></pre>
+  </div>
 
-bash
-Copy
-Edit
-php artisan migrate
-✅ Langkah 6: Jalankan Server Lokal Laravel
-bash
-Copy
-Edit
-php artisan serve
-Lalu buka di browser:
+  <div class="step">
+    <h2>✅ Langkah 4: Generate App Key</h2>
+    <pre><code>php artisan key:generate</code></pre>
+  </div>
 
-cpp
-Copy
-Edit
-http://127.0.0.1:8000
-✅ Langkah 7 (Opsional): Install Frontend Dependency
-Jika proyek menggunakan frontend seperti Vite, jalankan juga:
+  <div class="step">
+    <h2>✅ Langkah 5: Buat dan Jalankan Migrasi (jika perlu)</h2>
+    <pre><code>php artisan migrate</code></pre>
+  </div>
 
-bash
-Copy
-Edit
-npm install
-npm run dev
-Pastikan kamu punya Node.js dan npm dulu. Download dari https://nodejs.org
+  <div class="step">
+    <h2>✅ Langkah 6: Jalankan Server Lokal Laravel</h2>
+    <pre><code>php artisan serve</code></pre>
+    <p>Kemudian buka di browser:</p>
+    <pre><code>http://127.0.0.1:8000</code></pre>
+  </div>
+
+  <div class="step">
+    <h2>✅ Langkah 7 (Opsional): Install Frontend Dependency</h2>
+    <p>Jika menggunakan Vite untuk frontend:</p>
+    <pre><code>npm install
+npm run dev</code></pre>
+    <div class="note">
+      Pastikan kamu sudah install Node.js dan npm. Bisa diunduh dari <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

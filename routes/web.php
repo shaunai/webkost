@@ -8,9 +8,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -41,6 +41,7 @@ Route::get('/kamar/{id}', [KamarController::class, 'show'])->name('kamar.detail'
 use App\Http\Controllers\PemesananController;
 Route::post('/pemesanan', [PemesananController::class, 'store'])->name('pemesanan.store');
 Route::get('/pemesanan/{id}', [PemesananController::class, 'form'])->name('pemesanan.form');
+Route::get('/pemesanan', [PemesananController::class, 'index'])->name('pemesanan.index');
 
 // Notifikasi routes
 use App\Http\Controllers\NotifikasiController;

@@ -43,13 +43,16 @@
                         </tbody>
                     </table>
                 </div>
+            <x-chatboot/>
             </section>
         </main>
     </div>
     @vite(['resources/css/keluhan.css',
                         'resources/js/keluhan.js',
                         'resources/css/dashboard.css',
-                        'resources/js/dashboard.js'
+                        'resources/js/dashboard.js',
+                        'resources/css/chatboot.css',
+                        'resources/js/chatboot.js'
                         
                         ])
 </x-app-layout>

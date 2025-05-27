@@ -44,9 +44,9 @@
 
   <div class="step">
     <h2>✅ Langkah 1: Clone Repository dari GitHub</h2>
-    <p>Misalnya URL repo: <code>https://github.com/username/project-laravel.git</code></p>
-    <pre><code>git clone https://github.com/username/project-laravel.git
-cd project-laravel</code></pre>
+    <p>Misalnya URL repo: <code>[https://github.com/shaunai/webkost.git]</code></p>
+    <pre><code>git clone https://github.com/shaunai/webkost.git
+cd webkost</code></pre>
   </div>
 
   <div class="step">

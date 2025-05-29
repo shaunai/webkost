@@ -49,9 +49,9 @@ class ProfileController extends Controller
 
         // Update data lain
         $user->fill($request->only(['nama', 'email', 'no_hp', 'gender']));
-        if ($user->isDirty('email')) {
-            $user->email_verified_at = null;
-        }
+        // if ($user->isDirty('email')) {
+        //     $user->email_verified_at = null;
+        // }
         $user->save();
 
         return Redirect::route('profile.show')->with('status', 'profile-updated');

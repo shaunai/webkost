@@ -44,7 +44,7 @@ php artisan storage:link</code></pre>
   </div>
 
   <div class="step">
-    <h2>✅ Langkah 7 (Opsional): Install Frontend Dependency</h2>
+    <h2>✅ Langkah 7: Install Frontend Dependency</h2>
     <p>Jika menggunakan Vite untuk frontend:</p>
     <pre><code>npm install
 npm run dev</code></pre>

@@ -35,11 +35,12 @@
         <option value="P" {{ old('gender') == 'P' ? 'selected' : '' }}>Perempuan</option>
     </select>
 
-    <select name="role" required>
+    <!-- <select name="role" required>
         <option value="">Pilih Role</option>
         <option value="penyewa" {{ old('role') == 'penyewa' ? 'selected' : '' }}>Penyewa</option>
         <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Admin</option>
-    </select>
+    </select> -->
+   <input type="hidden" name="role" value="penyewa">
 
     <input type="file" name="foto_profile" accept="image/*">
 

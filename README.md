@@ -37,15 +37,14 @@ DB_PASSWORD=</code></pre>
     <pre><code>php artisan migrate</code></pre>
   </div>
 
-  <div class="step">
-    <h2>✅ Langkah 6: Jalankan Server Lokal Laravel</h2>
-    <pre><code>php artisan serve</code></pre>
-    <p>Kemudian buka di browser:</p>
-    <pre><code>http://127.0.0.1:8000</code></pre>
+   <div class="step">
+    <h2>✅ Langkah 6: Unlink dan Link Storage</h2>
+    <pre><code>php artisan storage:unlink
+php artisan storage:link</code></pre>
   </div>
 
   <div class="step">
-    <h2>✅ Langkah 7 (Opsional): Install Frontend Dependency</h2>
+    <h2>✅ Langkah 7: Install Frontend Dependency</h2>
     <p>Jika menggunakan Vite untuk frontend:</p>
     <pre><code>npm install
 npm run dev</code></pre>
@@ -53,7 +52,13 @@ npm run dev</code></pre>
       Pastikan kamu sudah install Node.js dan npm. Bisa diunduh dari <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>
     </div>
   </div>
-
+  
+  <div class="step">
+    <h2>✅ Langkah 8: Jalankan Server Lokal Laravel</h2>
+    <pre><code>php artisan serve</code></pre>
+    <p>Kemudian buka di browser:</p>
+    <pre><code>http://127.0.0.1:8000</code></pre>
+  </div>
 </body>
 </html>
 
